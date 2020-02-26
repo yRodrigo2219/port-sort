@@ -1,0 +1,146 @@
+.fab {
+   padding-left: 10px;
+   padding-right: 10px;
+   background-color: DodgerBlue;
+   border-radius: 5%;
+   box-shadow: 0 2px 5px 0 #666;
+   display: grid;
+   position: fixed;
+   right: 10px;
+   bottom: 10px;
+}
+
+.fab-b {
+    padding: 4px;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+
+}
+
+.fab-b > button > img {
+    width: 24px;
+    height: 24px;
+    
+}
+
+#xpeed {
+    width: 36px;
+    display: inline-block;
+}
+
+.fab-b > span {
+    display: inline-block;
+}
+
+.fab-b > button {
+    padding: 4px;
+    font-size: 20px;
+    margin: 0 2px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.25;
+    margin-bottom: 2px;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.fab-b > meter::-webkit-meter-bar {
+    background: DodgerBlue;
+    border-radius: 3px;
+    border: 3px solid #ffffff;
+    height: 28px;
+    vertical-align: -0.2em;
+    display: inline-block;
+}
+
+.fab-b > #xpeed{
+    font-size: 16px;
+}
+
+.fab-b > meter::-webkit-meter-optimum-value,
+.fab-b > meter::-webkit-meter-suboptimum-value,
+.fab-b > meter::-webkit-meter-even-less-good-value {
+  background: #ffffff
+}
+
+.fab-b .able > button:hover {
+    transform: scale(1.15);
+}
+
+.fab-b .able  > button:active {
+    transform: scale(1.7);
+}
+
+.fab-b > button:focus {
+    outline: none;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    display: table-row;
+    font-size: 21px;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

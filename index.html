@@ -1,9 +1,38 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>404</title>
-      <meta http-equiv = "refresh" content = "0; url = https://yrodrigo2219.github.io/" />
-   </head>
-   <body>
-   </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./menu.css">
+    <title>Sorting</title>
+</head>
+<body>
+    <canvas id="canvas" width="1920" height="950"></canvas>
+
+    <div class="fab">
+        <div class="custom-select">
+            <select id="sel-sort">
+                <option value="0">Choose Sorting:</option>
+                <!--
+                <option value="1">Merge ~Broken~</option>
+                -->
+                <option value="2">Heap Sort</option>
+                <option value="3">Bubble Sort</option>
+                <option value="4">Selection Sort</option>
+            </select>
+        </div>
+        <div class="fab-b">
+            <button id="f-back"><img src="img/rewind.png" alt="⏪" draggable="false"></button>
+            <button id="f-play"><img src="img/play.png" alt="▶" draggable="false"></button>
+            <button id="f-fast"><img src="img/ff.png" alt="⏩" draggable="false"></button>
+            <span id="xpeed"> ?x</span>
+            <span> | </span>
+            <meter id="meter" value="10" min="5" max="50"></meter>
+        </div>
+    </div>
+
+    <script src="./menu.js"></script>
+    <script src="./index.js"></script>
+</body>
 </html>
